@@ -1,0 +1,6 @@
+name: factions-essencial
+version: '1.0-SNAPSHOT'
+main: me.nonameiqz.factionsEssencial.FactionsEssencial
+api-version: '1.21'
+authors: [ NoNameiqz ]
+description: This is a test plugin
