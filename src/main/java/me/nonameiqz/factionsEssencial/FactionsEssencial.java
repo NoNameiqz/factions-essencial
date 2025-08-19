@@ -1,5 +1,6 @@
 package me.nonameiqz.factionsEssencial;
 
+import me.nonameiqz.factionsEssencial.Listeners.JoinLeaveListener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class FactionsEssencial extends JavaPlugin {
@@ -11,6 +12,9 @@ public final class FactionsEssencial extends JavaPlugin {
         System.out.println("\u001B[32mFactions Essencial\u001B[0m");
         System.out.println("\u001B[32mVersion 1.0 SNAPSHOT\u001B[0m");
         System.out.println("**---------------------------------**");
+
+        //listeners
+        getServer().getPluginManager().registerEvents(new JoinLeaveListener(),this);
     }
 
     @Override
