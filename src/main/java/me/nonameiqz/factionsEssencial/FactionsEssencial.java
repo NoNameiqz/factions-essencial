@@ -14,7 +14,12 @@ public final class FactionsEssencial extends JavaPlugin {
         System.out.println("**---------------------------------**");
 
         //listeners
-        getServer().getPluginManager().registerEvents(new JoinLeaveListener(),this);
+        getServer().getPluginManager().registerEvents(new JoinLeaveListener(this),this);
+
+        //config
+        saveDefaultConfig();
+        getConfig().options().copyDefaults(true);
+        saveConfig();
     }
 
     @Override
