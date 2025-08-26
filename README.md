@@ -32,13 +32,8 @@ A custom plugin for a private Minecraft server that combines essential features 
 The `config.yml` allows full customization of messages and settings:
 
 ```yaml
-messages:
-  join: "&a{player} joined the server!"
-  leave: "&c{player} left the server!"
-
-claims:
-  max-claims: 5
-  claim-size: 16
+join-message: "&aBem-vindo %player% seu murcao, bom ver-te de volta!"
+leave-message: "&4%player% saiu, sera que vai voltar?"
 ```
 
 ## 🚀 How to Use
